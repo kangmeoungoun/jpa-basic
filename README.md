@@ -1,12 +1,14 @@
-##### HELLO JPA - 애플리케이션 개발
+##### 영속성 관리 - 내부동작방식
+###### 영송석 컨텍스트 1
 
-![image](https://user-images.githubusercontent.com/40969203/105422639-6cc32200-5c87-11eb-8668-31eac03c0203.png)
-![image](https://user-images.githubusercontent.com/40969203/105422661-777db700-5c87-11eb-8a69-455d7e66818c.png)
-![image](https://user-images.githubusercontent.com/40969203/105422665-7b113e00-5c87-11eb-83f5-7746f66b3aa1.png)
-![image](https://user-images.githubusercontent.com/40969203/105422673-7ea4c500-5c87-11eb-9230-43177e78cf4d.png)
-![image](https://user-images.githubusercontent.com/40969203/105422683-83697900-5c87-11eb-869a-1fdf0fbe850c.png)
-![image](https://user-images.githubusercontent.com/40969203/105422692-882e2d00-5c87-11eb-9858-3957f5682c16.png)
-![image](https://user-images.githubusercontent.com/40969203/105422738-9c722a00-5c87-11eb-891e-fdf12b158c4e.png)
-![image](https://user-images.githubusercontent.com/40969203/105422746-a09e4780-5c87-11eb-83ac-d9d28259ce6f.png)
-![image](https://user-images.githubusercontent.com/40969203/105422753-a431ce80-5c87-11eb-8b97-9c5e9fa06194.png)
-![image](https://user-images.githubusercontent.com/40969203/105422761-a7c55580-5c87-11eb-8bf8-b71337b429c5.png)
+![image](https://user-images.githubusercontent.com/40969203/105424431-bcefb380-5c8a-11eb-8ab1-ce13515a5c4f.png)
+![image](https://user-images.githubusercontent.com/40969203/105424441-bfeaa400-5c8a-11eb-9c96-5e8c8629f2d8.png)
+![image](https://user-images.githubusercontent.com/40969203/105424450-c37e2b00-5c8a-11eb-9a2c-b65f4f986742.png)
+![image](https://user-images.githubusercontent.com/40969203/105424473-caa53900-5c8a-11eb-8fe6-5df7b9c1e463.png)
+![image](https://user-images.githubusercontent.com/40969203/105424500-d42ea100-5c8a-11eb-9bbf-800e490a6612.png)
+![image](https://user-images.githubusercontent.com/40969203/105424534-df81cc80-5c8a-11eb-9b0c-724e4b48d167.png)
+![image](https://user-images.githubusercontent.com/40969203/105424544-e3adea00-5c8a-11eb-864b-0f7185443e23.png)
+![image](https://user-images.githubusercontent.com/40969203/105424552-e7417100-5c8a-11eb-8d25-34593977df99.png)
+![image](https://user-images.githubusercontent.com/40969203/105424562-ea3c6180-5c8a-11eb-8183-46d917b1d7f3.png)
+![image](https://user-images.githubusercontent.com/40969203/105424571-edcfe880-5c8a-11eb-8700-d03d46451056.png)
+![image](https://user-images.githubusercontent.com/40969203/105424585-f32d3300-5c8a-11eb-8a7b-ff9d0dc59af1.png)

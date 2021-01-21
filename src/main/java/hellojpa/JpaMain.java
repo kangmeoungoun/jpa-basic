@@ -13,12 +13,14 @@ public class JpaMain{
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            Member findMember = em.find(Member.class , 1L);
-            List<Member> result = em.createQuery("select m from Member m" , Member.class)
-                                    .setFirstResult(5)
-                                    .setMaxResults(8)
-                                    .getResultList();
-            findMember.setName("HelloJPA");
+            //비영속
+            Member member = new Member();
+            member.setId(100L);
+            member.setName("HelloJPA");
+            System.out.println("===BEFORE===");
+            em.persist(member);
+            System.out.println("===AFTER===");
+
             tx.commit();
         }catch (Exception e){
             tx.rollback();
