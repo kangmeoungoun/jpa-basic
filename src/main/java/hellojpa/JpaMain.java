@@ -14,9 +14,9 @@ public class JpaMain{
         tx.begin();
         try{
             //영속
-            Member member = new Member(99L , "TEST");
+            Member member = new Member(200L , "TEST");
             em.persist(member);
-            member.setName("TEST2");
+            em.flush();
             System.out.println("==========================");
             tx.commit();
         }catch (Exception e){
