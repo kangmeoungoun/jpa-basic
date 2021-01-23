@@ -1,7 +1,13 @@
 ##### 엔티티 매핑
-###### 객체와 테이블 매핑
+###### 데이터베이스 스키마 자동 생성
 
-![image](https://user-images.githubusercontent.com/40969203/105569990-bac04e80-5d89-11eb-9973-3782a64a5f53.png)
-![image](https://user-images.githubusercontent.com/40969203/105569993-be53d580-5d89-11eb-9928-82fe32c95d87.png)
-![image](https://user-images.githubusercontent.com/40969203/105569996-c0b62f80-5d89-11eb-8362-844bd9809b1d.png)
+
+1.애플리케이션 로딩 시점에 디비 테이플 생성하는 기능 지원
+
+ddl-auto = update 컬럼 지우는건 불가능
+![image](https://user-images.githubusercontent.com/40969203/105570903-6a4bef80-5d8f-11eb-9c0e-f0e8ab20429f.png)
+![image](https://user-images.githubusercontent.com/40969203/105570907-6cae4980-5d8f-11eb-97ac-f52321bf24da.png)
+![image](https://user-images.githubusercontent.com/40969203/105570909-6f10a380-5d8f-11eb-954d-691b798fe102.png)
+![image](https://user-images.githubusercontent.com/40969203/105570911-720b9400-5d8f-11eb-9814-260ad6c9b661.png)
+![image](https://user-images.githubusercontent.com/40969203/105570913-746dee00-5d8f-11eb-9493-32cd23b221b7.png)
 
