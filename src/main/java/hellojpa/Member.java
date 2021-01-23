@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Getter @Setter
-@Entity
+@Entity(name = "MBR")
 public class Member{
     @Id
     private Long id;
