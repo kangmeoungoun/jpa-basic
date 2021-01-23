@@ -27,11 +27,10 @@ public class JpaMain{
             em.flush();
             em.clear();
             Member findMember = em.find(Member.class , member.getId());
-            Team findTeam = findMember.getTeam();
-            System.out.println("findTeam.getName() = " + findTeam.getName());
-            //
-            Team newTeam = em.find(Team.class , 100L);
-            findMember.setTeam(newTeam);
+            findMember.getTeam().getMembers()
+                                .forEach(m->{
+                                    System.out.println("member = " + m.getUsername());
+                                });
             tx.commit();
         }catch (Exception e){
             tx.rollback();

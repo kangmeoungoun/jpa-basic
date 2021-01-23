@@ -1,20 +1,27 @@
 ##### 연관관계 매핑 기초
-###### 단방향 연관관계
+###### 양방향 연관관계와 연관관계의 주인1 - 기본
 
-![image](https://user-images.githubusercontent.com/40969203/105577119-06d7b700-5dbb-11eb-9d7b-d149356cda87.png)
-![image](https://user-images.githubusercontent.com/40969203/105577120-0b03d480-5dbb-11eb-8a09-c8fcd56c20c5.png)
-![image](https://user-images.githubusercontent.com/40969203/105577124-10f9b580-5dbb-11eb-8047-4e2a4df82e6d.png)
-![image](https://user-images.githubusercontent.com/40969203/105577126-13f4a600-5dbb-11eb-84fb-18794bbb3201.png)
-![image](https://user-images.githubusercontent.com/40969203/105577128-16ef9680-5dbb-11eb-85db-16eadfc08cda.png)
-![image](https://user-images.githubusercontent.com/40969203/105577129-1b1bb400-5dbb-11eb-8d8d-21060998901b.png)
-![image](https://user-images.githubusercontent.com/40969203/105577130-1eaf3b00-5dbb-11eb-9e4c-b1aad793d5b5.png)
-![image](https://user-images.githubusercontent.com/40969203/105577133-2373ef00-5dbb-11eb-8ce7-48f10b3ac929.png)
-![image](https://user-images.githubusercontent.com/40969203/105577137-2838a300-5dbb-11eb-9b37-0c7afa749fd1.png)
-![image](https://user-images.githubusercontent.com/40969203/105577143-2d95ed80-5dbb-11eb-8f96-f4a75bcc5c68.png)
-![image](https://user-images.githubusercontent.com/40969203/105577147-31297480-5dbb-11eb-8111-b72dfa453a44.png)
-![image](https://user-images.githubusercontent.com/40969203/105577153-34bcfb80-5dbb-11eb-80fc-c00fbb7ef5b6.png)
-![image](https://user-images.githubusercontent.com/40969203/105577156-38508280-5dbb-11eb-80e4-fa77e45afe57.png)
-![image](https://user-images.githubusercontent.com/40969203/105577160-3c7ca000-5dbb-11eb-9aec-6d19a51b821a.png)
-![image](https://user-images.githubusercontent.com/40969203/105577179-4bfbe900-5dbb-11eb-9941-ea093e74ae06.png)
-![image](https://user-images.githubusercontent.com/40969203/105577190-50c09d00-5dbb-11eb-87c1-14c9e5eac8ab.png)
-![image](https://user-images.githubusercontent.com/40969203/105577194-54542400-5dbb-11eb-8f18-119603bd96f8.png)
+
+#### 테이블 연관관계
+```html
+테이블은 외래키 하나라 양방향이 다 있는것.양쪽에서 조인다 가능하니까.
+```
+##### 테이블 관계와 객체 관계의 가장 큰차이이다.
+##### 객체는 가급적이면 단뱡향이 좋다.
+##### 연관관계 주인은 mappedBy 속성 사용X
+#### 객체 연관관계
+```html
+    
+```
+![image](https://user-images.githubusercontent.com/40969203/105579612-d7c94180-5dca-11eb-90fa-2ef67792fd46.png)
+![image](https://user-images.githubusercontent.com/40969203/105579613-db5cc880-5dca-11eb-91ad-07e844f40fc2.png)
+![image](https://user-images.githubusercontent.com/40969203/105579617-de57b900-5dca-11eb-9758-88d38740bf6a.png)
+![image](https://user-images.githubusercontent.com/40969203/105579618-e1eb4000-5dca-11eb-8739-9620969e86b8.png)
+![image](https://user-images.githubusercontent.com/40969203/105579623-e6175d80-5dca-11eb-8ae1-38dc3c59013f.png)
+![image](https://user-images.githubusercontent.com/40969203/105579625-ea437b00-5dca-11eb-8537-73c97894f939.png)
+![image](https://user-images.githubusercontent.com/40969203/105579626-ed3e6b80-5dca-11eb-974d-ceeca9c3a16c.png)
+![image](https://user-images.githubusercontent.com/40969203/105579631-f0395c00-5dca-11eb-9300-cfc1dffa6a26.png)
+![image](https://user-images.githubusercontent.com/40969203/105579635-f596a680-5dca-11eb-9151-a8d26be40c95.png)
+![image](https://user-images.githubusercontent.com/40969203/105579637-fa5b5a80-5dca-11eb-9688-b169698a2182.png)
+![image](https://user-images.githubusercontent.com/40969203/105579638-fe877800-5dca-11eb-9c6e-71923f9f9143.png)
+![image](https://user-images.githubusercontent.com/40969203/105579642-047d5900-5dcb-11eb-981a-4dae4ee5a420.png)
