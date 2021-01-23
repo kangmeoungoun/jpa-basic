@@ -1,9 +1,20 @@
-##### 엔티티 매핑
-###### 실전 예제 1 - 요구사항 분석과 기본 매핑
+##### 연관관계 매핑 기초
+###### 단방향 연관관계
 
-![image](https://user-images.githubusercontent.com/40969203/105575210-54e5be00-5dad-11eb-9d13-8d6cd02c7a1b.png)
-![image](https://user-images.githubusercontent.com/40969203/105575213-57e0ae80-5dad-11eb-907b-cbe6b826d2ae.png)
-![image](https://user-images.githubusercontent.com/40969203/105575216-5a430880-5dad-11eb-8d82-74a5ff2e7815.png)
-![image](https://user-images.githubusercontent.com/40969203/105575221-5d3df900-5dad-11eb-9262-af08099320f9.png)
-![image](https://user-images.githubusercontent.com/40969203/105575223-5fa05300-5dad-11eb-8250-ccee3506e8c0.png)
-![image](https://user-images.githubusercontent.com/40969203/105575225-629b4380-5dad-11eb-8d01-ddc7ef22c690.png)
+![image](https://user-images.githubusercontent.com/40969203/105577119-06d7b700-5dbb-11eb-9d7b-d149356cda87.png)
+![image](https://user-images.githubusercontent.com/40969203/105577120-0b03d480-5dbb-11eb-8a09-c8fcd56c20c5.png)
+![image](https://user-images.githubusercontent.com/40969203/105577124-10f9b580-5dbb-11eb-8047-4e2a4df82e6d.png)
+![image](https://user-images.githubusercontent.com/40969203/105577126-13f4a600-5dbb-11eb-84fb-18794bbb3201.png)
+![image](https://user-images.githubusercontent.com/40969203/105577128-16ef9680-5dbb-11eb-85db-16eadfc08cda.png)
+![image](https://user-images.githubusercontent.com/40969203/105577129-1b1bb400-5dbb-11eb-8d8d-21060998901b.png)
+![image](https://user-images.githubusercontent.com/40969203/105577130-1eaf3b00-5dbb-11eb-9e4c-b1aad793d5b5.png)
+![image](https://user-images.githubusercontent.com/40969203/105577133-2373ef00-5dbb-11eb-8ce7-48f10b3ac929.png)
+![image](https://user-images.githubusercontent.com/40969203/105577137-2838a300-5dbb-11eb-9b37-0c7afa749fd1.png)
+![image](https://user-images.githubusercontent.com/40969203/105577143-2d95ed80-5dbb-11eb-8f96-f4a75bcc5c68.png)
+![image](https://user-images.githubusercontent.com/40969203/105577147-31297480-5dbb-11eb-8111-b72dfa453a44.png)
+![image](https://user-images.githubusercontent.com/40969203/105577153-34bcfb80-5dbb-11eb-80fc-c00fbb7ef5b6.png)
+![image](https://user-images.githubusercontent.com/40969203/105577156-38508280-5dbb-11eb-80e4-fa77e45afe57.png)
+![image](https://user-images.githubusercontent.com/40969203/105577160-3c7ca000-5dbb-11eb-9aec-6d19a51b821a.png)
+![image](https://user-images.githubusercontent.com/40969203/105577179-4bfbe900-5dbb-11eb-9941-ea093e74ae06.png)
+![image](https://user-images.githubusercontent.com/40969203/105577190-50c09d00-5dbb-11eb-87c1-14c9e5eac8ab.png)
+![image](https://user-images.githubusercontent.com/40969203/105577194-54542400-5dbb-11eb-8f18-119603bd96f8.png)
