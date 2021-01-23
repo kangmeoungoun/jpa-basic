@@ -2,6 +2,7 @@ package jpabook.jpashop;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class Team{
     private Long id;
 
     private String name;
-    @OneToMany(mappedBy = "team")
+    @OneToMany(mappedBy = "team",fetch = FetchType.LAZY)
     List<Member> members = new ArrayList<>();
 
 }
