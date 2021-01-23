@@ -1,13 +1,12 @@
 ##### 엔티티 매핑
-###### 데이터베이스 스키마 자동 생성
+###### 필드와 컬럼 매핑
 
-
-1.애플리케이션 로딩 시점에 디비 테이플 생성하는 기능 지원
-
-ddl-auto = update 컬럼 지우는건 불가능
-![image](https://user-images.githubusercontent.com/40969203/105570903-6a4bef80-5d8f-11eb-9c0e-f0e8ab20429f.png)
-![image](https://user-images.githubusercontent.com/40969203/105570907-6cae4980-5d8f-11eb-97ac-f52321bf24da.png)
-![image](https://user-images.githubusercontent.com/40969203/105570909-6f10a380-5d8f-11eb-954d-691b798fe102.png)
-![image](https://user-images.githubusercontent.com/40969203/105570911-720b9400-5d8f-11eb-9814-260ad6c9b661.png)
-![image](https://user-images.githubusercontent.com/40969203/105570913-746dee00-5d8f-11eb-9493-32cd23b221b7.png)
+![image](https://user-images.githubusercontent.com/40969203/105571667-586d4b00-5d95-11eb-98a3-62b004899bb5.png)
+![image](https://user-images.githubusercontent.com/40969203/105571669-5b683b80-5d95-11eb-9681-850db4f8c5d0.png)
+![image](https://user-images.githubusercontent.com/40969203/105571673-5dca9580-5d95-11eb-9a9d-47984456db1b.png)
+![image](https://user-images.githubusercontent.com/40969203/105571675-602cef80-5d95-11eb-9663-2129f169b7dc.png)
+![image](https://user-images.githubusercontent.com/40969203/105571678-63c07680-5d95-11eb-99d5-d7ee8b79f46a.png)
+![image](https://user-images.githubusercontent.com/40969203/105571679-6622d080-5d95-11eb-9301-df40f4c7ceef.png)
+![image](https://user-images.githubusercontent.com/40969203/105571680-68852a80-5d95-11eb-8841-f7ad114fd3da.png)
+![image](https://user-images.githubusercontent.com/40969203/105571682-6ae78480-5d95-11eb-91de-5ab462ecd620.png)
 

@@ -13,11 +13,11 @@ public class JpaMain{
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            //영속
-            Member member = em.find(Member.class , 150L);
-            member.setName("AAAAA");
-            em.clear();
-            Member member2 = em.find(Member.class , 150L);
+            Member member = new Member();
+            member.setId(3L);
+            member.setUsername("C");
+            member.setRoleType(RoleType.GUEST);
+            em.persist(member);
             tx.commit();
         }catch (Exception e){
             tx.rollback();
