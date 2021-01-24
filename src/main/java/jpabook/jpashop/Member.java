@@ -4,8 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "MEMBER_T")
@@ -22,13 +20,6 @@ public class Member extends BaseEntity{
     @ManyToOne
     @JoinColumn(insertable = false,updatable = false,name = "TEAM_ID")
     private Team team;
-
-    @OneToOne(mappedBy = "member")
-    private Locker locker;
-
-    @OneToMany(mappedBy = "member")
-    private List<MemberProduct> memberProducts = new ArrayList<>();
-
 
 
 }
