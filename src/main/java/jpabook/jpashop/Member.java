@@ -1,9 +1,7 @@
 package jpabook.jpashop;
 
-import jpabook.Product;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -13,7 +11,7 @@ import java.util.List;
 @Table(name = "MEMBER_T")
 @Getter
 @Setter
-public class Member{
+public class Member extends BaseEntity{
     @Id
     @GeneratedValue
     @Column(name = "MEMBER_ID")
@@ -30,6 +28,7 @@ public class Member{
 
     @OneToMany(mappedBy = "member")
     private List<MemberProduct> memberProducts = new ArrayList<>();
+
 
 
 }
