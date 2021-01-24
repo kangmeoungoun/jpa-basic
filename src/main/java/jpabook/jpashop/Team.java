@@ -8,10 +8,10 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
 @Getter
 @Setter
-public class Team{
+@Entity
+public class Team extends BaseEntity{
     @Id
     @GeneratedValue
     @Column(name = "TEAM_ID")
@@ -21,5 +21,6 @@ public class Team{
     @OneToMany
     @JoinColumn(name = "TEAM_ID")
     private List<Member> members = new ArrayList<>();
+
 
 }
