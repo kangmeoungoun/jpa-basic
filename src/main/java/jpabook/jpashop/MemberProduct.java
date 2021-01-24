@@ -1,6 +1,5 @@
 package jpabook.jpashop;
 
-import jpabook.Product;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,4 +1,4 @@
-package jpabook;
+package jpabook.jpashop;
 
 import jpabook.jpashop.Member;
 import jpabook.jpashop.MemberProduct;

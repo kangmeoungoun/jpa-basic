@@ -1,8 +1,5 @@
 package jpabook.jpashop;
 
-import jpabook.jpashop.domain.Order;
-import jpabook.jpashop.domain.OrderItem;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
@@ -15,20 +12,16 @@ public class JpaMain{
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            Member member = new Member();
-            member.setUsername("member1");
-            em.persist(member);
-            em.flush();;
-
-            Locker locker = new Locker();
-            locker.setName("locker1");
-            locker.setMember(member);
-            em.persist(locker);
+            Movie movie = new Movie();
+            movie.setDirector("aaaa");
+            movie.setActor("bbbb");
+            movie.setName("바람과 함꼐 사라지다.");
+            movie.setPrice(10000);
+            em.persist(movie);
             em.flush();
             em.clear();
-            Member member1 = em.find(Member.class , 1L);
-            em.flush();
-
+            Item item = em.find(Item.class , movie.getId());
+            System.out.println("findMovie.getName() = " + item.getName());
 
             tx.commit();
         }catch (Exception e){
