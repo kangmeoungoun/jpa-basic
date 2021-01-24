@@ -1,5 +1,6 @@
 package jpabook.jpashop;
 
+import jpabook.jpashop.domain.Book;
 import jpabook.jpashop.domain.Order;
 import jpabook.jpashop.domain.OrderItem;
 
@@ -15,20 +16,10 @@ public class JpaMain{
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            Member member = new Member();
-            member.setUsername("member1");
-            em.persist(member);
-            em.flush();;
-
-            Locker locker = new Locker();
-            locker.setName("locker1");
-            locker.setMember(member);
-            em.persist(locker);
-            em.flush();
-            em.clear();
-            Member member1 = em.find(Member.class , 1L);
-            em.flush();
-
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("김영한");
+            em.persist(book);
 
             tx.commit();
         }catch (Exception e){
