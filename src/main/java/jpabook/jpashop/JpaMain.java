@@ -18,10 +18,18 @@ public class JpaMain{
             Member member = new Member();
             member.setUsername("member1");
             em.persist(member);
-            Team team = new Team();
-            team.setName("teamA");
-            team.getMembers().add(member);
-            em.persist(team);
+            em.flush();;
+
+            Locker locker = new Locker();
+            locker.setName("locker1");
+            locker.setMember(member);
+            em.persist(locker);
+            em.flush();
+            em.clear();
+            Member member1 = em.find(Member.class , 1L);
+            em.flush();
+
+
             tx.commit();
         }catch (Exception e){
             tx.rollback();

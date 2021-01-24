@@ -22,4 +22,7 @@ public class Member{
     @JoinColumn(insertable = false,updatable = false,name = "TEAM_ID")
     private Team team;
 
+    @OneToOne(mappedBy = "member")
+    private Locker locker;
+
 }
