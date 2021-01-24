@@ -1,10 +1,13 @@
 package jpabook.jpashop;
 
+import jpabook.Product;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "MEMBER_T")
@@ -24,5 +27,9 @@ public class Member{
 
     @OneToOne(mappedBy = "member")
     private Locker locker;
+
+    @OneToMany(mappedBy = "member")
+    private List<MemberProduct> memberProducts = new ArrayList<>();
+
 
 }
