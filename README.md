@@ -1,19 +1,13 @@
 ##### 프록시와 연관관계 관리
-##### 프록시
+##### 즉시로딩과 지연 로딩
 
-```java
-org.hibernate.LazyInitializationException: could not initialize proxy [jpabook.jpashop.Member#1] - no Session
-//jpa 만들다 보면 꼭 만날 에러
-//프록시 객체 가져와서 준영속 상태로 만든후 그객체로 사용할떄
-em.detach(refMember);
-refMember.getUsername();
-```
-
-![image](https://user-images.githubusercontent.com/40969203/105647563-e8240e00-5ee9-11eb-85ea-5f765dbec64c.png)
-![image](https://user-images.githubusercontent.com/40969203/105647565-ea866800-5ee9-11eb-9521-0d6dbe926959.png)
-![image](https://user-images.githubusercontent.com/40969203/105647569-ed815880-5ee9-11eb-89e4-c9dd857d11bf.png)
-![image](https://user-images.githubusercontent.com/40969203/105647570-f07c4900-5ee9-11eb-9c1e-9df63689d50d.png)
-![image](https://user-images.githubusercontent.com/40969203/105647574-f2dea300-5ee9-11eb-9ad8-13ee1a92cf58.png)
-![image](https://user-images.githubusercontent.com/40969203/105647577-f5d99380-5ee9-11eb-9c7d-a212da0eaccb.png)
-![image](https://user-images.githubusercontent.com/40969203/105647580-f96d1a80-5ee9-11eb-89f4-cb14e3f459be.png)
-![image](https://user-images.githubusercontent.com/40969203/105647581-fd00a180-5ee9-11eb-9930-2723c88385d6.png)
+![image](https://user-images.githubusercontent.com/40969203/105710750-e0e91880-5f5a-11eb-9dba-005777eb9015.png)
+![image](https://user-images.githubusercontent.com/40969203/105710759-e47c9f80-5f5a-11eb-882c-ff9524f26ee7.png)
+![image](https://user-images.githubusercontent.com/40969203/105710766-e6def980-5f5a-11eb-827b-362cd60ced9a.png)
+![image](https://user-images.githubusercontent.com/40969203/105710778-e9d9ea00-5f5a-11eb-8126-b6eca356ada8.png)
+![image](https://user-images.githubusercontent.com/40969203/105710784-ecd4da80-5f5a-11eb-95a5-d384bc81fecf.png)
+![image](https://user-images.githubusercontent.com/40969203/105710792-f0686180-5f5a-11eb-89e7-7bf183155201.png)
+![image](https://user-images.githubusercontent.com/40969203/105710799-f2cabb80-5f5a-11eb-804a-86c4ce42a446.png)
+![image](https://user-images.githubusercontent.com/40969203/105710809-f6f6d900-5f5a-11eb-9887-afe7568386cb.png)
+![image](https://user-images.githubusercontent.com/40969203/105710820-fa8a6000-5f5a-11eb-8613-1fa60f9e21f4.png)
+![image](https://user-images.githubusercontent.com/40969203/105710845-0413c800-5f5b-11eb-9631-aa59932b23ec.png)
