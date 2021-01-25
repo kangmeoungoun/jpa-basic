@@ -1,13 +1,26 @@
 ##### 프록시와 연관관계 관리
-##### 즉시로딩과 지연 로딩
+##### 영속성 전이(CASCADE) 와 고아 객체
 
-![image](https://user-images.githubusercontent.com/40969203/105710750-e0e91880-5f5a-11eb-9dba-005777eb9015.png)
-![image](https://user-images.githubusercontent.com/40969203/105710759-e47c9f80-5f5a-11eb-882c-ff9524f26ee7.png)
-![image](https://user-images.githubusercontent.com/40969203/105710766-e6def980-5f5a-11eb-827b-362cd60ced9a.png)
-![image](https://user-images.githubusercontent.com/40969203/105710778-e9d9ea00-5f5a-11eb-8126-b6eca356ada8.png)
-![image](https://user-images.githubusercontent.com/40969203/105710784-ecd4da80-5f5a-11eb-95a5-d384bc81fecf.png)
-![image](https://user-images.githubusercontent.com/40969203/105710792-f0686180-5f5a-11eb-89e7-7bf183155201.png)
-![image](https://user-images.githubusercontent.com/40969203/105710799-f2cabb80-5f5a-11eb-804a-86c4ce42a446.png)
-![image](https://user-images.githubusercontent.com/40969203/105710809-f6f6d900-5f5a-11eb-9887-afe7568386cb.png)
-![image](https://user-images.githubusercontent.com/40969203/105710820-fa8a6000-5f5a-11eb-8613-1fa60f9e21f4.png)
-![image](https://user-images.githubusercontent.com/40969203/105710845-0413c800-5f5b-11eb-9631-aa59932b23ec.png)
+```java
+    @OneToMany(mappedBy = "parent",cascade = CascadeType.ALL)
+    private List<Child> childList = new ArrayList<>();
+
+    //이안에 있는 에들도 persist 할때 같이 한다는 개념.
+    //소유자가 한명일때 사용가능
+    //child 를 다른 에도 가지고 있으면 사용 x
+    parent.addChild(child1);
+    parent.addChild(child2);
+    em.persist(parent);
+
+
+@OneToMany(mappedBy = "parent",cascade = CascadeType.ALL,orphanRemoval = true)
+//고아객체 orphanRemoval = true 이놈도 소유자가 한명일떄 사용가능
+```
+
+![image](https://user-images.githubusercontent.com/40969203/105715641-33c5ce80-5f61-11eb-9a89-85a75447c2bc.png)
+![image](https://user-images.githubusercontent.com/40969203/105715649-36282880-5f61-11eb-9045-d2ac3f7e64ce.png)
+![image](https://user-images.githubusercontent.com/40969203/105715661-388a8280-5f61-11eb-90df-9a5e7ceafbad.png)
+![image](https://user-images.githubusercontent.com/40969203/105715669-3b857300-5f61-11eb-9d43-1c612782dd36.png)
+![image](https://user-images.githubusercontent.com/40969203/105715680-3f18fa00-5f61-11eb-954c-e5ad12ccbbd0.png)
+![image](https://user-images.githubusercontent.com/40969203/105715686-417b5400-5f61-11eb-812d-c5df47480398.png)
+![image](https://user-images.githubusercontent.com/40969203/105715702-45a77180-5f61-11eb-9f38-9a214bc0daba.png)
