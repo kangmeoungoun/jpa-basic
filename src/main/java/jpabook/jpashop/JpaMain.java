@@ -5,23 +5,40 @@ import org.hibernate.jpa.internal.PersistenceUnitUtilImpl;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 public class JpaMain{
+
+    private static Address a;
+
     public static void main(String[] args){
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            Address address = new Address("city" , "street" , "10");
+            Member member= new Member();
+            member.setUsername("member1");
+            member.setHomeAddress(new Address("homeCity","street","10000"));
+            member.getFavoriteFoods().add("치킨");
+            member.getFavoriteFoods().add("족발");
+            member.getFavoriteFoods().add("피자");
+            member.getAddressHistory().add(new AddressEntity("old1" , "street" , "10000"));
+            member.getAddressHistory().add(new AddressEntity("old2" , "street" , "10000"));
+            em.persist(member);
+            em.flush();
+            em.clear();
+            System.out.println("==============START==============");
+            Member findMember = em.find(Member.class , member.getId());
+            a = findMember.getHomeAddress();
+            //findMember.setHomeAddress(new Address("newCity", a.getStreet(), a.getZipcode()));
+            
+            //치킨 -> 한식
+            //findMember.getFavoriteFoods().remove("치킨");
+            //findMember.getFavoriteFoods().add("한식");
 
-            Member member1  = new Member();
-            member1.setUsername("member1");
-            member1.setHomeAddress(address);
-            em.persist(member1);
-            Address newAddress = new Address("newCity" , address.getStreet() , address.getZipcode());
-            member1.setHomeAddress(newAddress);
-
+            findMember.getAddressHistory().remove(new AddressEntity("old1" , "street" , "10000"));
+            findMember.getAddressHistory().add(new AddressEntity("newCity" , "street" , "10000"));
             tx.commit();
         }catch (Exception e){
             tx.rollback();
