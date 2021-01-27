@@ -1,7 +1,7 @@
 ##### 객체지향 쿼리 언어 1 - 기본 문법
-##### 프로젝션(SELECT)
+##### 페이징
 
-엔티티 프로젝션인 경우 영속성 컨텍스트에서 전부 관리가 된다. 몇건이든간에
-
-![image](https://user-images.githubusercontent.com/40969203/105993438-c2fdee00-60e9-11eb-83b5-2c1f27af8467.png)
-![image](https://user-images.githubusercontent.com/40969203/105993444-c6917500-60e9-11eb-87ee-a173f63d83bd.png)
+![image](https://user-images.githubusercontent.com/40969203/105995175-fb9ec700-60eb-11eb-898d-41abc9861fdb.png)
+![image](https://user-images.githubusercontent.com/40969203/105995188-fe99b780-60eb-11eb-853b-8315a5dff40b.png)
+![image](https://user-images.githubusercontent.com/40969203/105995198-00637b00-60ec-11eb-92db-d340d8c97649.png)
+![image](https://user-images.githubusercontent.com/40969203/105995206-035e6b80-60ec-11eb-987d-e4084fa04a2f.png)
