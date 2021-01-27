@@ -1,18 +1,13 @@
-package jpabook.jpashop;
-
-import org.hibernate.Hibernate;
-import org.hibernate.jpa.internal.PersistenceUnitUtilImpl;
+package jpql;
 
 import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
-import java.util.Set;
 
 public class JpaMain{
 
-    private static Address a;
 
     public static void main(String[] args){
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
@@ -20,12 +15,13 @@ public class JpaMain{
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            CriteriaBuilder cb = em.getCriteriaBuilder();
-            CriteriaQuery<Member> query = cb.createQuery(Member.class);
-            Root<Member> m = query.from(Member.class);
-            CriteriaQuery<Member> cq = query.select(m).where(cb.equal(m.get("username") , "kim"));
-            em.createQuery(cq).getResultList();
-
+            Member member =new Member();
+            member.setUsername("member1");
+            em.persist(member);
+            Member singleResult = em.createQuery("select m from Member m where m.username=:username" , Member.class)
+                                    .setParameter("username" , "member1")
+                                    .getSingleResult();
+            System.out.println("singleResult = " + singleResult.getUsername());
             tx.commit();
         }catch (Exception e){
             tx.rollback();
