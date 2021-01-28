@@ -1,4 +1,5 @@
 ##### 영속성 관리 - 내부동작방식
+
 ###### 영송석 컨텍스트 1
 
 ![image](https://user-images.githubusercontent.com/40969203/105424431-bcefb380-5c8a-11eb-8ab1-ce13515a5c4f.png)
