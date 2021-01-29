@@ -1,7 +1,9 @@
 ##### 객체지향 쿼리 언어 1 - 기본 문법
-##### 조인
+##### 서브 쿼리
 
-![image](https://user-images.githubusercontent.com/40969203/106227582-c6e65900-622c-11eb-9754-e0114ecb325d.png)
-![image](https://user-images.githubusercontent.com/40969203/106227613-d36ab180-622c-11eb-8ce6-b8716568d3f7.png)
-![image](https://user-images.githubusercontent.com/40969203/106227623-d665a200-622c-11eb-9658-69a46fb3497a.png)
-![image](https://user-images.githubusercontent.com/40969203/106227630-d8c7fc00-622c-11eb-8815-f2ea4efd0024.png)
+from 절 서브쿼리 지원안함
+
+![image](https://user-images.githubusercontent.com/40969203/106228706-4543fa80-622f-11eb-95d6-39746e66ea91.png)
+![image](https://user-images.githubusercontent.com/40969203/106228712-48d78180-622f-11eb-8e6e-fa0e2611eeff.png)
+![image](https://user-images.githubusercontent.com/40969203/106228718-4d039f00-622f-11eb-8173-ce86a9622c4b.png)
+![image](https://user-images.githubusercontent.com/40969203/106228730-512fbc80-622f-11eb-9d82-48d313295450.png)
