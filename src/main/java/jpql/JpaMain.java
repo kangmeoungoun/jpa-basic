@@ -15,21 +15,20 @@ public class JpaMain{
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-            for (int i = 0; i < 100; i++) {
+                Team team = new Team();
+                team.setName("teamA");
+                em.persist(team);
                 Member member =new Member();
-                member.setUsername("member"+i);
-                member.setAge(i);
+                member.setUsername("teamA");
+                member.setAge(10);
+                member.setTeam(team);
                 em.persist(member);
-            }
-
-            List<Member> result = em.createQuery("select m from Member m order by m.age asc" , Member.class)
-                    .setFirstResult(1)
-                    .setMaxResults(10)
+                em.flush();
+                em.clear();
+            String query = "select m from Member m left outer join Team t on m.username = t.name";
+            List<Member> result = em.createQuery(query , Member.class)
                     .getResultList();
-            System.out.println("result.size = "+result.size());
-            for (Member member1 : result) {
-                System.out.println("member1 = " + member1);
-            }
+
             tx.commit();
         }catch (Exception e){
             tx.rollback();
