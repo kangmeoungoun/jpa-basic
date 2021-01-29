@@ -38,15 +38,11 @@ public class JpaMain{
 
             em.flush();
             em.clear();
-            String sql = "select t from Team t";
-            List<Team> resultList = em.createQuery(sql , Team.class).getResultList();
-            for (Team team : resultList) {
-                System.out.println("team = " + team.getName()+"|member"+team.getMembers().size());
-                team.getMembers().forEach(member -> {
-                    System.out.println("-> member = "+member);
-                });
+            String sql = "select m from Member m where m.team=:team";
+            List<Member> members = em.createQuery(sql , Member.class).setParameter("team" , teamA).getResultList();
+            for (Member member : members) {
+                System.out.println(member);
             }
-
             tx.commit();
         }catch (Exception e){
             tx.rollback();
