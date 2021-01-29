@@ -15,15 +15,12 @@ public class JpaMain{
         EntityTransaction tx = em.getTransaction();
         tx.begin();
         try{
-                Team team = new Team();
-                team.setName("teamA");
-                em.persist(team);
-                Member member =new Member();
-                member.setUsername("관리자");
-                member.setAge(10);
-                member.setTeam(team);
-                member.setType(MemberType.ADMIN);
-                em.persist(member);
+                Member member1 = new Member();
+                member1.setUsername("관리자1");
+                em.persist(member1);
+                Member member2 = new Member();
+                member2.setUsername("관리자2");
+                em.persist(member2);
                 em.flush();
                 em.clear();
                 /*String sql = "select " +
@@ -35,7 +32,8 @@ public class JpaMain{
 
                 String sql = "select coalesce(m.username,'이름 없는 회원') as username from Member m";
                 */
-                String sql = "select nullif(m.username,'관리자') as username from Member m";
+
+                String sql = "select group_concat(m.username) as username from Member m";
             List<String> resultList = em.createQuery(sql , String.class).getResultList();
             for (String s : resultList) {
                 System.out.println("s = " + s);

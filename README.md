@@ -1,5 +1,5 @@
 ##### 객체지향 쿼리 언어 1 - 기본 문법
-##### 조건식(CASE 등등)
+##### JPQL 함수
 
-![image](https://user-images.githubusercontent.com/40969203/106231078-2eec6d80-6234-11eb-9e2c-d8860bc73b14.png)
-![image](https://user-images.githubusercontent.com/40969203/106231086-33188b00-6234-11eb-8afd-ded486b6c1d5.png)
+![image](https://user-images.githubusercontent.com/40969203/106240176-29e4e980-6247-11eb-90bc-fd317ac99644.png)
+![image](https://user-images.githubusercontent.com/40969203/106240185-2cdfda00-6247-11eb-8e12-13ebac99ceb2.png)
