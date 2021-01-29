@@ -1,9 +1,5 @@
 ##### 객체지향 쿼리 언어 1 - 기본 문법
-##### 서브 쿼리
+##### JPQL 타입 표현과 기타식
 
-from 절 서브쿼리 지원안함
-
-![image](https://user-images.githubusercontent.com/40969203/106228706-4543fa80-622f-11eb-95d6-39746e66ea91.png)
-![image](https://user-images.githubusercontent.com/40969203/106228712-48d78180-622f-11eb-8e6e-fa0e2611eeff.png)
-![image](https://user-images.githubusercontent.com/40969203/106228718-4d039f00-622f-11eb-8173-ce86a9622c4b.png)
-![image](https://user-images.githubusercontent.com/40969203/106228730-512fbc80-622f-11eb-9d82-48d313295450.png)
+![image](https://user-images.githubusercontent.com/40969203/106229703-6c9bc700-6231-11eb-9937-3116b486283e.png)
+![image](https://user-images.githubusercontent.com/40969203/106229739-7c1b1000-6231-11eb-98b5-e49db8017bfb.png)

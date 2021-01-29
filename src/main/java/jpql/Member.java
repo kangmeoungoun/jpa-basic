@@ -23,7 +23,8 @@ public class Member{
         this.team=team;
         team.getMembers().add(this);
     }
-
+    @Enumerated(EnumType.STRING)
+    private MemberType type;
     @Override
     public String toString(){
         return "Member{" +
