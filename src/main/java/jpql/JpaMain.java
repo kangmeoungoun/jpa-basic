@@ -38,13 +38,9 @@ public class JpaMain{
 
             em.flush();
             em.clear();
-            String sql = "select distinct t from Team t join fetch t.members";
+            String sql = "select t from Team t";
             List<Team> resultList = em.createQuery(sql , Team.class).getResultList();
             for (Team team : resultList) {
-                //fetch join 을 하지 않으면
-                //회원1, 팀A(SQL)
-                //회원3, 팀B(SQL)
-                //회원2, 팀A(캐시)
                 System.out.println("team = " + team.getName()+"|member"+team.getMembers().size());
                 team.getMembers().forEach(member -> {
                     System.out.println("-> member = "+member);
